@@ -4,6 +4,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-    api.use('underscore', 'jquery', ['client', ]);
-    api.add_files('loader.js', ['client', ]);
+    api.use('underscore', 'client');
+    api.use('jquery', 'client');
+    api.add_files('loader.js', 'client');
 });
